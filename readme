@@ -1,0 +1,12 @@
+
+Task: 
+Automate adding a leave entitlement, assigning leave and cancelling of leave if
+insufficient leave balance.
+1. Add leave Entitlement - Select any employee, select leave type FMLA and add leave
+entitlement
+2. Assign Leave - Assign leave for the employee with a RANDOM leave type
+3. Leave List - Cancel the leave request if there is no sufficient leave balance.
+
+URL: Website: https://opensource-demo.orangehrmlive.com/
+
+Skill: Cucumber Framework for UI automation
