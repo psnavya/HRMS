@@ -25,7 +25,7 @@ public class TestRunner {
         Reporter.loadXMLConfig(new File(FileReaderManager.getInstance().getConfigReader().getReportConfigPath()));
         Reporter.setSystemInfo("User Name", System.getProperty("user.name"));
         Reporter.setSystemInfo("Time Zone", System.getProperty("user.timezone"));
-        Reporter.setSystemInfo("Machine", 	"Windows 10" + "64 Bit");
+        Reporter.setSystemInfo("Machine", 	System.getProperty("os.name")+" "+System.getProperty("os.arch")+" "+System.getProperty("os.version"));
         Reporter.setSystemInfo("Selenium", "3.7.0");
         Reporter.setSystemInfo("Maven", "3.5.2");
         Reporter.setSystemInfo("Java Version", "1.8.0_151");
