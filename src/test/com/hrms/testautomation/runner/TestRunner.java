@@ -1,16 +1,17 @@
-package runner;
+package com.hrms.testautomation.runner;
 
 import java.io.*;
+
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 import com.cucumber.listener.Reporter;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
-import managers.FileReaderManager;
+import com.hrms.testautomation.utilities.managers.FileReaderManager;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/features",
+@CucumberOptions(features = "src/test/com/hrms/testautomation/resources/features",
         glue= {"stepDefinitions"},
         /* plugin = { "pretty", "json:target/cucumber-reports/Cucumber.json",
            "junit:target/cucumber-reports/Cucumber.xml",
@@ -21,14 +22,13 @@ import managers.FileReaderManager;
 public class TestRunner {
 
     @AfterClass
-    public static void writeExtentReport() {
+    public static void writeExtentReport()  {
         Reporter.loadXMLConfig(new File(FileReaderManager.getInstance().getConfigReader().getReportConfigPath()));
         Reporter.setSystemInfo("User Name", System.getProperty("user.name"));
         Reporter.setSystemInfo("Time Zone", System.getProperty("user.timezone"));
         Reporter.setSystemInfo("Machine", 	System.getProperty("os.name")+" "+System.getProperty("os.arch")+" "+System.getProperty("os.version"));
-        Reporter.setSystemInfo("Selenium", "3.7.0");
-        Reporter.setSystemInfo("Maven", "3.5.2");
-        Reporter.setSystemInfo("Java Version", "1.8.0_151");
+         Reporter.setSystemInfo("Environment", FileReaderManager.getInstance().getConfigReader().getEnvironment().toString());
+        Reporter.setSystemInfo("Browser",FileReaderManager.getInstance().getConfigReader().getBrowser().toString() );
     }
 
 
