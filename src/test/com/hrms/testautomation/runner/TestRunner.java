@@ -17,6 +17,7 @@ import com.hrms.testautomation.utilities.managers.FileReaderManager;
            "junit:target/cucumber-reports/Cucumber.xml",
                  "html:target/cucumber-reports"},*/
         plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"},
+        tags = {"@Run"},
         monochrome = true
 )
 public class TestRunner {

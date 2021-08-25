@@ -1,4 +1,4 @@
-package com.hrms.testautomation.utilities.entities;
+package com.hrms.testautomation.entities;
 
 public class LeaveDetails{
     public String leaveType;

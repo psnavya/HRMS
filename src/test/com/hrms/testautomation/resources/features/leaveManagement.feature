@@ -1,7 +1,9 @@
+
 Feature: Automate adding a leave entitlement,assigning leave and cancelling of leave if insufficient leave balance.
 Background:
   Given i log in with username "Admin" and password "admin123"
 
+  @Run
  Scenario Outline: Add Leave Entitlement
     #Values to be taken from json file
     Given i am user "<user>"
@@ -14,7 +16,7 @@ Background:
    Examples:
      |Jeniffer Lawrence|
      |Ross Geller      |
-
+@Run
  Scenario Outline: Assign Leave Entitlement
     #Values to be taken from json file
     Given i am user "<user>"
@@ -27,7 +29,7 @@ Background:
    Examples:
      |Jeniffer Lawrence|
      |Ross Geller      |
-
+@Run
  Scenario Outline: Cancelling of leave in case of insufficient leave balance.
     #Values to be taken from json file
     Given i am user "<user>"
