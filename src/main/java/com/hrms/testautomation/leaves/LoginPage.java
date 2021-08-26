@@ -1,5 +1,6 @@
 package com.hrms.testautomation.leaves;
 
+import com.hrms.testautomation.utilities.selenium.TextHandling;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,11 +23,11 @@ public class LoginPage {
     private WebElement loginButton;
 
     public void enterUsername(String userName) {
-        userNameText.sendKeys(userName);
+        TextHandling.enterText(userName,userNameText);
     }
 
     public void enterPassword(String password) {
-        userNameText.sendKeys(password);
+        TextHandling.enterText(password,passwordText);
     }
 
     public void clickLoginButton() {

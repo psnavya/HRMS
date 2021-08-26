@@ -1,0 +1,21 @@
+[
+  {
+  "employeeName": "Jennifer Lawrence",
+    "leaveDetails": {
+      "leaveType": "US-FMLA",
+      "entitlement": 1,
+      "fromDate": "22-10-2021",
+      "toDate": "22-10-2021"
+    }
+  },
+  {
+    "employeeName": "Ross Geller",
+    "leaveDetails":
+    {
+      "leaveType": "US-FMLA",
+      "entitlement": 2,
+      "fromDate": "24-10-2021",
+      "toDate": "25-10-2021"
+    }
+  }
+]

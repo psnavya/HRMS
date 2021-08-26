@@ -1,10 +1,13 @@
 package com.hrms.testautomation.leaves;
 
+import com.hrms.testautomation.utilities.selenium.Actions;
+import com.hrms.testautomation.utilities.selenium.Click;
+import com.hrms.testautomation.utilities.selenium.Select;
+import com.hrms.testautomation.utilities.selenium.TextHandling;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 
 public class LeaveEntitlementPage {
 WebDriver driver;
@@ -26,19 +29,18 @@ WebDriver driver;
     private WebElement saveButton;
 
     public void enterEmployeeName(String employeeName) {
-        employeeNameText.sendKeys(employeeName);
+        TextHandling.enterText(employeeName,employeeNameText);
     }
 
     public void selectLeaveType(String leaveType) {
-        Select select=new Select(leaveTypeSelect);
-        select.selectByValue(leaveType);
+        Select.selectValueFromDropdown(leaveType,leaveTypeSelect);
     }
 
     public void enterEntitlement(String entitlement) {
-        entitlementText.sendKeys(entitlement);
+        TextHandling.enterText(entitlement,entitlementText);
     }
 
     public void clickSaveButton() {
-        saveButton.click();
+        Click.clickOn(saveButton);;
     }
 }
