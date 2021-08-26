@@ -1,4 +1,4 @@
-package com.hrms.testautomation.utilities.selenium;
+package com.hrms.testautomation.utilities.selenium.helpers;
 
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;

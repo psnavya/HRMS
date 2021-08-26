@@ -1,4 +1,4 @@
-package com.hrms.testautomation.utilities.selenium;
+package com.hrms.testautomation.utilities.selenium.helpers;
 
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;

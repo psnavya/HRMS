@@ -1,9 +1,8 @@
 package com.hrms.testautomation.leaves;
 
-import com.hrms.testautomation.utilities.selenium.Actions;
-import com.hrms.testautomation.utilities.selenium.Click;
-import com.hrms.testautomation.utilities.selenium.Select;
-import com.hrms.testautomation.utilities.selenium.TextHandling;
+import com.hrms.testautomation.utilities.selenium.helpers.Click;
+import com.hrms.testautomation.utilities.selenium.helpers.Select;
+import com.hrms.testautomation.utilities.selenium.helpers.TextHandling;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

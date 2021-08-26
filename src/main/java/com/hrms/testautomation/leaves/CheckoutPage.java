@@ -2,7 +2,7 @@ package com.hrms.testautomation.leaves;
 
 import java.util.List;
 
-import com.hrms.testautomation.utilities.selenium.Wait;
+import com.hrms.testautomation.utilities.selenium.helpers.Wait;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;

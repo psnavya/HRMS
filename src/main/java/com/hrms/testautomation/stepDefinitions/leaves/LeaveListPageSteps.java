@@ -2,7 +2,6 @@ package com.hrms.testautomation.stepDefinitions.leaves;
 
 import com.hrms.testautomation.leaves.LeaveListPage;
 import com.hrms.testautomation.utilities.cucumber.TestContext;
-import com.hrms.testautomation.utilities.selenium.Click;
 import cucumber.api.java.en.When;
 
 public class LeaveListPageSteps {
