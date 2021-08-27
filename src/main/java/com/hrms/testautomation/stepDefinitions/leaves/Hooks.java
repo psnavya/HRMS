@@ -2,6 +2,8 @@ package com.hrms.testautomation.stepDefinitions.leaves;
 
 import java.io.File;
 import java.io.IOException;
+
+import com.hrms.testautomation.utilities.managers.FileReaderManager;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import com.cucumber.listener.Reporter;
@@ -21,6 +23,8 @@ public class Hooks {
 
     @Before
     public void beforeScenario(Scenario scenario) {
+        Reporter.loadXMLConfig(new File(FileReaderManager.getInstance().getConfigReader().getReportConfigPath()));
+
         Reporter.assignAuthor("HRMS Automation: Navya PS");
     }
 

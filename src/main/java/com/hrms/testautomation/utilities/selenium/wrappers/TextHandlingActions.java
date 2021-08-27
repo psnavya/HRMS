@@ -1,6 +1,5 @@
 package com.hrms.testautomation.utilities.selenium.wrappers;
 
-import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 
 public interface TextHandlingActions {

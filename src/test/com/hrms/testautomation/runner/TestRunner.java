@@ -3,7 +3,6 @@ package com.hrms.testautomation.runner;
 import java.io.*;
 
 import org.junit.AfterClass;
-import org.junit.Before;
 import org.junit.runner.RunWith;
 import com.cucumber.listener.Reporter;
 import cucumber.api.CucumberOptions;
@@ -13,13 +12,17 @@ import com.hrms.testautomation.utilities.managers.FileReaderManager;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/com/hrms/testautomation/resources/features",
-        glue= {"stepDefinitions"},
-        /* plugin = { "pretty", "json:target/cucumber-reports/Cucumber.json",
+      glue= {"stepdefinitions"},
+       /* plugin = { "pretty", "json:target/cucumber-reports/Cucumber.json",
            "junit:target/cucumber-reports/Cucumber.xml",
                  "html:target/cucumber-reports"},*/
         plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"},
-        tags = {"@Run"},
+        tags = {"@Run1"},
         monochrome = true
+
+    /*    features = {"src/test/com/hrms/testautomation/resources/features"},
+        glue = {"com.cucumber.stepdefinitions"},
+        plugin = {"com.cucumber.listener.ExtentCucumberFormatter:output/report.html"}*/
 )
 public class TestRunner {
 

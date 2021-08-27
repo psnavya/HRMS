@@ -2,6 +2,7 @@ package com.hrms.testautomation.stepDefinitions.leaves;
 
 import com.hrms.testautomation.leaves.BreadCrumb;
 import com.hrms.testautomation.utilities.cucumber.TestContext;
+import com.hrms.testautomation.utilities.dataProviders.JsonDataReader;
 import cucumber.api.java.en.When;
 
 public class BreadCrumbSteps {
@@ -15,6 +16,9 @@ BreadCrumb breadCrumb;
 
     @When("^i navigate to add leave entitlement tab$")
     public void iNavigateToAddLeaveEntitlementTab()  {
+        JsonDataReader jsonDataReader=new JsonDataReader();
+        jsonDataReader.getCustomerByName("Jennifer Lawrence");
+        jsonDataReader.getCustomerData().get(0);
         breadCrumb.hoverOnViewLeaveModule();
         breadCrumb.hoverOneEntitlements();
         breadCrumb.clickOnAddEntitlements();

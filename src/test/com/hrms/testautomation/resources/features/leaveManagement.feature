@@ -1,21 +1,25 @@
 
 Feature: Automate adding a leave entitlement,assigning leave and cancelling of leave if insufficient leave balance.
 Background:
-  Given i log in with username "Admin" and password "admin123"
+  Given user is on Home Page
+  And i log in with username "Admin" and password "admin123"
 
-  @Run
- Scenario Outline: Add Leave Entitlement
+  @Run1
+ Scenario: Add Leave Entitlement
     #Values to be taken from json file
-    Given i am user "<user>"
+   # Given i am user "<user>"
+    Given user is on Home Page
+    And i log in with username "Admin" and password "admin123"
     When i navigate to add leave entitlement tab
     And i enter employee name in leave entitlement page
     And i select leave type in leave entitlement page
     And i enter entitlement in leave entitlement page
     And i click Save button in leave entitlement page
     And i click OK button in Confirm Leave assignment popup
-   Examples:
-     |Jeniffer Lawrence|
-     |Ross Geller      |
+  # Examples:
+   #|user|
+   #  |Jeniffer Lawrence|
+    # |Ross Geller      |
 @Run
  Scenario Outline: Assign Leave Entitlement
     #Values to be taken from json file
@@ -27,6 +31,7 @@ Background:
     And i click Assign button in assign leave page
     And i click Save in assign leave page
    Examples:
+   |user|
      |Jeniffer Lawrence|
      |Ross Geller      |
 @Run
@@ -38,5 +43,6 @@ Background:
     And i click Search button in leave list page
     And i cancel leave in case of insufficient balance
    Examples:
+   |user|
      |Jeniffer Lawrence|
      |Ross Geller      |

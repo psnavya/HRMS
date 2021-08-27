@@ -17,7 +17,7 @@ public class JsonDataReader {
         customerList = getCustomerData();
     }
 
-    private List<Customer> getCustomerData() {
+    public List<Customer> getCustomerData() {
         Gson gson = new Gson();
         BufferedReader bufferReader = null;
         try {

@@ -52,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Aug 25, 2021 05:57:22 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Aug 27, 2021 05:52:34 PM</span>
 				</a>
 			</li>
 			<li>
@@ -77,8 +77,7 @@
 					<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
+											<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -91,7 +90,7 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@Run</a></li>
+					<li><a href='#'>@Run1</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -157,7 +156,7 @@
 					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>3</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> others
 				</div>
 			</div>
 		</div>
@@ -172,7 +171,7 @@
 					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>22</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>8</span> others
 				</div>
 			</div>
 		</div>
@@ -189,158 +188,83 @@
 				<li class='test displayed active has-leaf skip' status='skip' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Automate adding a leave entitlement,assigning leave and cancelling of leave if insufficient leave balance.</span>
-						<span class='test-time'>Aug 25, 2021 05:57:22 PM</span>
+						<span class='test-time'>Aug 27, 2021 05:52:34 PM</span>
 						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenariooutline node' test-id='2' status='skip'>
-	<span class='duration right label'>0h 0m 0s+55ms</span>
+<div class='scenario node' test-id='2' status='skip'>
+	<div class='category-list'>
+		<span class='category label white-text'>@Run1</span>
+	</div>
+	<span class='duration right label'>0h 0m 0s+45ms</span>
 	<div class='desc'>
-		<b>ScenarioOutline</b>
+		<b>Scenario</b>
 		<span class="desc-text">Add Leave Entitlement</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node scenario skip' status='skip'>
-			<div class='category-list'>
-				<span class='category label white-text'>@Run</span>
-			</div>
+		<li test-id='3' class='node given skip' status='skip'>
 			
-			<b>Scenario</b>
+			<b>Given</b>
 			
-			<span class="bdd-step-name">Add Leave Entitlement</span>
+			<span class="bdd-step-name">Given user is on Home Page</span>
+				<div class='pre'>undefined</div>
 			
-				<ul class='steps'>
-					<li test-id='4' class='node given skip' status='skip'><b>Given</b>
-						<span class="bdd-step-name">Given i log in with username "Admin" and password "admin123"</span>
-							<div class='pre'>undefined</div>
-					</li>
-					<li test-id='5' class='node given skip' status='skip'><b>Given</b>
-						<span class="bdd-step-name">Given i am user "<user>"</span>
-							<div class='pre'>undefined</div>
-					</li>
-					<li test-id='6' class='node when skip' status='skip'><b>When</b>
-						<span class="bdd-step-name">When i navigate to add leave entitlement tab</span>
-							<div class='pre'>undefined</div>
-					</li>
-					<li test-id='7' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And i enter employee name in leave entitlement page</span>
-							<div class='pre'>undefined</div>
-					</li>
-					<li test-id='8' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And i select leave type in leave entitlement page</span>
-							<div class='pre'>undefined</div>
-					</li>
-					<li test-id='9' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And i enter entitlement in leave entitlement page</span>
-							<div class='pre'>undefined</div>
-					</li>
-					<li test-id='10' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And i click Save button in leave entitlement page</span>
-							<div class='pre'>undefined</div>
-					</li>
-					<li test-id='11' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And i click OK button in Confirm Leave assignment popup</span>
-							<div class='pre'>undefined</div>
-					</li>
-				</ul>
 		</li>
-	</ul>
-</div>
-<div class='scenariooutline node' test-id='12' status='skip'>
-	<span class='duration right label'>0h 0m 0s+5ms</span>
-	<div class='desc'>
-		<b>ScenarioOutline</b>
-		<span class="desc-text">Assign Leave Entitlement</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='13' class='node scenario skip' status='skip'>
-			<div class='category-list'>
-				<span class='category label white-text'>@Run</span>
-			</div>
+		<li test-id='4' class='node and skip' status='skip'>
 			
-			<b>Scenario</b>
+			<b>And</b>
 			
-			<span class="bdd-step-name">Assign Leave Entitlement</span>
+			<span class="bdd-step-name">And i log in with username "Admin" and password "admin123"</span>
+				<div class='pre'>undefined</div>
 			
-				<ul class='steps'>
-					<li test-id='14' class='node given skip' status='skip'><b>Given</b>
-						<span class="bdd-step-name">Given i log in with username "Admin" and password "admin123"</span>
-							<div class='pre'>undefined</div>
-					</li>
-					<li test-id='15' class='node given skip' status='skip'><b>Given</b>
-						<span class="bdd-step-name">Given i am user "<user>"</span>
-							<div class='pre'>undefined</div>
-					</li>
-					<li test-id='16' class='node when skip' status='skip'><b>When</b>
-						<span class="bdd-step-name">When i navigate to assign leave tab</span>
-							<div class='pre'>undefined</div>
-					</li>
-					<li test-id='17' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And i enter employee name in assign leave page</span>
-							<div class='pre'>undefined</div>
-					</li>
-					<li test-id='18' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And i select random leave type in assign leave page</span>
-							<div class='pre'>undefined</div>
-					</li>
-					<li test-id='19' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And i enter date range in assign leave page</span>
-							<div class='pre'>undefined</div>
-					</li>
-					<li test-id='20' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And i click Assign button in assign leave page</span>
-							<div class='pre'>undefined</div>
-					</li>
-					<li test-id='21' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And i click Save in assign leave page</span>
-							<div class='pre'>undefined</div>
-					</li>
-				</ul>
 		</li>
-	</ul>
-</div>
-<div class='scenariooutline node' test-id='22' status='skip'>
-	<span class='duration right label'>0h 0m 0s+3ms</span>
-	<div class='desc'>
-		<b>ScenarioOutline</b>
-		<span class="desc-text">Cancelling of leave in case of insufficient leave balance.</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='23' class='node scenario skip' status='skip'>
-			<div class='category-list'>
-				<span class='category label white-text'>@Run</span>
-			</div>
+		<li test-id='5' class='node when skip' status='skip'>
 			
-			<b>Scenario</b>
+			<b>When</b>
 			
-			<span class="bdd-step-name">Cancelling of leave in case of insufficient leave balance.</span>
+			<span class="bdd-step-name">When i navigate to add leave entitlement tab</span>
+				<div class='pre'>undefined</div>
 			
-				<ul class='steps'>
-					<li test-id='24' class='node given skip' status='skip'><b>Given</b>
-						<span class="bdd-step-name">Given i log in with username "Admin" and password "admin123"</span>
-							<div class='pre'>undefined</div>
-					</li>
-					<li test-id='25' class='node given skip' status='skip'><b>Given</b>
-						<span class="bdd-step-name">Given i am user "<user>"</span>
-							<div class='pre'>undefined</div>
-					</li>
-					<li test-id='26' class='node when skip' status='skip'><b>When</b>
-						<span class="bdd-step-name">When i navigate to view leave list tab</span>
-							<div class='pre'>undefined</div>
-					</li>
-					<li test-id='27' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And i select all checkbox in leave list page</span>
-							<div class='pre'>undefined</div>
-					</li>
-					<li test-id='28' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And i click Search button in leave list page</span>
-							<div class='pre'>undefined</div>
-					</li>
-					<li test-id='29' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And i cancel leave in case of insufficient balance</span>
-							<div class='pre'>undefined</div>
-					</li>
-				</ul>
+		</li>
+		<li test-id='6' class='node and skip' status='skip'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And i enter employee name in leave entitlement page</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+		<li test-id='7' class='node and skip' status='skip'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And i select leave type in leave entitlement page</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+		<li test-id='8' class='node and skip' status='skip'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And i enter entitlement in leave entitlement page</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+		<li test-id='9' class='node and skip' status='skip'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And i click Save button in leave entitlement page</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+		<li test-id='10' class='node and skip' status='skip'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And i click OK button in Confirm Leave assignment popup</span>
+				<div class='pre'>undefined</div>
+			
 		</li>
 	</ul>
 </div>
@@ -398,16 +322,16 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Run</span>
+						<span class='category-name'>@Run1</span>
 						<span class='category-status right'>
-							<span class='label others'>3</span>
+							<span class='label others'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
 							
 							
-							<span class='label yellow darken-2 white-text'>Others: 3</span>
+							<span class='label yellow darken-2 white-text'>Others: 1</span>
 						</div>
 					
 						<div class='category-tests'>
@@ -421,18 +345,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 25, 2021 05:57:22 PM</td>
-										<td class='linked' test-id='3'>Automate adding a leave entitlement,assigning leave and cancelling of leave if insufficient leave balance..Add Leave Entitlement.Add Leave Entitlement</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-									<tr>
-										<td>Aug 25, 2021 05:57:22 PM</td>
-										<td class='linked' test-id='13'>Automate adding a leave entitlement,assigning leave and cancelling of leave if insufficient leave balance..Assign Leave Entitlement.Assign Leave Entitlement</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-									<tr>
-										<td>Aug 25, 2021 05:57:22 PM</td>
-										<td class='linked' test-id='23'>Automate adding a leave entitlement,assigning leave and cancelling of leave if insufficient leave balance..Cancelling of leave in case of insufficient leave balance..Cancelling of leave in case of insufficient leave balance.</td>
+										<td>Aug 27, 2021 05:52:34 PM</td>
+										<td class='linked' test-id='2'>Automate adding a leave entitlement,assigning leave and cancelling of leave if insufficient leave balance..Add Leave Entitlement</td>
 										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 								</tbody>
@@ -467,31 +381,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>22</div>
+					<div class='panel-lead'>8</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 25, 2021 05:57:22 PM</div>
+					<div class='panel-lead'>Aug 27, 2021 05:52:34 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 25, 2021 05:57:22 PM</div>
+			 		<div class='panel-lead'>Aug 27, 2021 05:52:34 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>159ms</div>
+					<div class='panel-lead'>130ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -538,10 +452,10 @@
 							<th>Others</th>
 						</tr>
 						<tr>
-							<td>@Run</td>
+							<td>@Run1</td>
 							<td>0</td>
 							<td>0</td>
-							<td>3</td>
+							<td>1</td>
 						</tr>
 					</table>
 				</div>
@@ -569,18 +483,18 @@
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 3,
+				skipChild: 1,
 				infoChild: 0,
-				exceptionsChild: 3,
+				exceptionsChild: 1,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 22,
+				skipGrandChild: 8,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 22,
+				exceptionsGrandChild: 8,
 			};
 		</script>
 		
