@@ -1,6 +1,0 @@
-
-^
-java:S5361"HReplace this call to "replaceAll()" by a call to the "replace()" method.(¨¸Ä®
->	java:S108,")Either remove or fill this block of code.(ï­£Ä
-h	java:S1003"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆÿíðþÿÿÿÿ
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ŒÜÐ‡úÿÿÿÿ

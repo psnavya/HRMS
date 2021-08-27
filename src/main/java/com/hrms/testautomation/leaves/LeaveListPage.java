@@ -1,6 +1,7 @@
 package com.hrms.testautomation.leaves;
 
-import com.hrms.testautomation.utilities.selenium.helpers.Click;
+import com.hrms.testautomation.utilities.selenium.helpers.ClickClass;
+import com.hrms.testautomation.utilities.selenium.wrappers.ClickActions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,7 +11,7 @@ import java.util.List;
 
 public class LeaveListPage {
     WebDriver driver;
-
+    ClickActions clickActions=new ClickClass();
     public LeaveListPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver,this);
@@ -31,12 +32,12 @@ private WebElement allCheckBox;
     @FindBy(id="select_leave_action_67")
     private WebElement saveButton;
     public void selectOptionInLeaveList(String all) {
-        Click.clickOn(allCheckBox);
+        clickActions.clickOn(allCheckBox);
 
     }
 
     public void clickSearchButton() {
-        Click.clickOn(searchButton);
+        clickActions.clickOn(searchButton);
         driver.navigate().refresh();
 
     }
@@ -44,10 +45,10 @@ private WebElement allCheckBox;
     public void cancelLeaves() {
         for(WebElement w:leaves) {
             if (w.getText().contains("-"))
-                Click.clickOn(w);
-                Click.clickOn(cancelButton);
+                clickActions.clickOn(w);
+            clickActions.clickOn(cancelButton);
         }
-        Click.clickOn(saveButton);
+        clickActions.clickOn(saveButton);
 
 
     }

@@ -1,7 +1,8 @@
 package com.hrms.testautomation.leaves;
-import com.hrms.testautomation.utilities.selenium.helpers.Actions;
-import com.hrms.testautomation.utilities.selenium.wrappers.ActionsInterface;
-import com.hrms.testautomation.utilities.selenium.helpers.Click;
+import com.hrms.testautomation.utilities.selenium.helpers.HoverClass;
+import com.hrms.testautomation.utilities.selenium.wrappers.ClickActions;
+import com.hrms.testautomation.utilities.selenium.wrappers.HoverActions;
+import com.hrms.testautomation.utilities.selenium.helpers.ClickClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,7 +10,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public class BreadCrumb {
     WebDriver driver;
-
+    ClickActions clickActions=new ClickClass();
+    HoverActions hoverActions=new HoverClass();
 
     public BreadCrumb(WebDriver driver) {
         this.driver = driver;
@@ -30,26 +32,26 @@ public class BreadCrumb {
     @FindBy(id="menu_leave_viewLeaveList")
     private WebElement viewLeaveList;
 
-    public  void hoverOnViewLeaveModule()
+    public void hoverOnViewLeaveModule()
     {
-      //  Actions.hoverOn(viewLeaveModule,driver);
-       // ActionsInterface.hoverOn(viewLeaveList,driver);
+        hoverActions.hoverOn(viewLeaveModule,driver);
+
 
     }
     public void hoverOneEntitlements()
     {
-        //Actions.hoverOn(entitlements,driver);
+        hoverActions.hoverOn(entitlements,driver);
     }
     public void clickOnAddEntitlements()
     {
-        Click.clickOn(addLeaveEntitlement);
+        clickActions.clickOn(addLeaveEntitlement);
     }
     public void clickOnAssignLeave()
     {
-        Click.clickOn(assignLeave);
+        clickActions.clickOn(assignLeave);
     }
     public void clickOnViewLeaveList()
     {
-        Click.clickOn(viewLeaveList);
+        clickActions.clickOn(viewLeaveList);
     }
 }

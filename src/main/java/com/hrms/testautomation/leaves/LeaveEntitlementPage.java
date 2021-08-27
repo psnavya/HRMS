@@ -1,8 +1,11 @@
 package com.hrms.testautomation.leaves;
 
-import com.hrms.testautomation.utilities.selenium.helpers.Click;
-import com.hrms.testautomation.utilities.selenium.helpers.Select;
-import com.hrms.testautomation.utilities.selenium.helpers.TextHandling;
+import com.hrms.testautomation.utilities.selenium.helpers.ClickClass;
+import com.hrms.testautomation.utilities.selenium.helpers.SelectClass;
+import com.hrms.testautomation.utilities.selenium.helpers.TextHandlingClass;
+import com.hrms.testautomation.utilities.selenium.wrappers.ClickActions;
+import com.hrms.testautomation.utilities.selenium.wrappers.SelectActions;
+import com.hrms.testautomation.utilities.selenium.wrappers.TextHandlingActions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,6 +13,9 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LeaveEntitlementPage {
 WebDriver driver;
+ClickActions clickActions=new ClickClass();
+SelectActions selectActions=new SelectClass() ;
+TextHandlingActions textHandlingActions=new TextHandlingClass();
 
     public LeaveEntitlementPage(WebDriver driver) {
         this.driver = driver;
@@ -28,18 +34,18 @@ WebDriver driver;
     private WebElement saveButton;
 
     public void enterEmployeeName(String employeeName) {
-        TextHandling.enterText(employeeName,employeeNameText);
+        textHandlingActions.enterText(employeeName,employeeNameText);
     }
 
     public void selectLeaveType(String leaveType) {
-        Select.selectValueFromDropdown(leaveType,leaveTypeSelect);
+        selectActions.selectValueFromDropdown(leaveType,leaveTypeSelect);
     }
 
     public void enterEntitlement(String entitlement) {
-        TextHandling.enterText(entitlement,entitlementText);
+        textHandlingActions.enterText(entitlement,entitlementText);
     }
 
     public void clickSaveButton() {
-        Click.clickOn(saveButton);;
+        clickActions.clickOn(saveButton);;
     }
 }

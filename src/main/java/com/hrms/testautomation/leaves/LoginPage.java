@@ -1,6 +1,7 @@
 package com.hrms.testautomation.leaves;
 
-import com.hrms.testautomation.utilities.selenium.helpers.TextHandling;
+import com.hrms.testautomation.utilities.selenium.helpers.TextHandlingClass;
+import com.hrms.testautomation.utilities.selenium.wrappers.TextHandlingActions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
     WebDriver driver;
+    TextHandlingActions textHandlingActions=new TextHandlingClass();
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
@@ -23,11 +25,11 @@ public class LoginPage {
     private WebElement loginButton;
 
     public void enterUsername(String userName) {
-        TextHandling.enterText(userName,userNameText);
+        textHandlingActions.enterText(userName,userNameText);
     }
 
     public void enterPassword(String password) {
-        TextHandling.enterText(password,passwordText);
+        textHandlingActions.enterText(password,passwordText);
     }
 
     public void clickLoginButton() {

@@ -2,19 +2,21 @@ package com.hrms.testautomation.utilities.selenium.helpers;
 
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
+
+import com.hrms.testautomation.utilities.selenium.wrappers.WaitActions;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import com.hrms.testautomation.utilities.managers.FileReaderManager;
 
 
-public class Wait {
+public class WaitClass implements WaitActions {
+    @Override
 
-    public static void untilJqueryIsDone(WebDriver driver){
+    public  void untilJqueryIsDone(WebDriver driver){
         untilJqueryIsDone(driver, FileReaderManager.getInstance().getConfigReader().getImplicitlyWait());
     }
-
-    public static void untilJqueryIsDone(WebDriver driver, Long timeoutInSeconds){
+    public  void untilJqueryIsDone(WebDriver driver, Long timeoutInSeconds){
         until(driver, (d) ->
         {
             Boolean isJqueryCallDone = (Boolean)((JavascriptExecutor) driver).executeScript("return jQuery.active==0");
@@ -22,12 +24,12 @@ public class Wait {
             return isJqueryCallDone;
         }, timeoutInSeconds);
     }
+    @Override
 
-    public static void untilPageLoadComplete(WebDriver driver) {
+    public  void untilPageLoadComplete(WebDriver driver) {
         untilPageLoadComplete(driver, FileReaderManager.getInstance().getConfigReader().getImplicitlyWait());
     }
-
-    public static void untilPageLoadComplete(WebDriver driver, Long timeoutInSeconds){
+    public  void untilPageLoadComplete(WebDriver driver, Long timeoutInSeconds){
         until(driver, (d) ->
         {
             Boolean isPageLoaded = (Boolean)((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
@@ -35,13 +37,12 @@ public class Wait {
             return isPageLoaded;
         }, timeoutInSeconds);
     }
+    @Override
 
-    public static void until(WebDriver driver, Function<WebDriver, Boolean> waitCondition){
+    public  void until(WebDriver driver, Function<WebDriver, Boolean> waitCondition){
         until(driver, waitCondition, FileReaderManager.getInstance().getConfigReader().getImplicitlyWait());
     }
-
-
-    private static void until(WebDriver driver, Function<WebDriver, Boolean> waitCondition, Long timeoutInSeconds){
+    public void until(WebDriver driver, Function<WebDriver, Boolean> waitCondition, Long timeoutInSeconds){
         WebDriverWait webDriverWait = new WebDriverWait(driver, timeoutInSeconds);
         webDriverWait.withTimeout(timeoutInSeconds, TimeUnit.SECONDS);
         try{

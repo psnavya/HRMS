@@ -1,8 +1,11 @@
 package com.hrms.testautomation.leaves;
 
-import com.hrms.testautomation.utilities.selenium.helpers.Click;
-import com.hrms.testautomation.utilities.selenium.helpers.Select;
-import com.hrms.testautomation.utilities.selenium.helpers.TextHandling;
+import com.hrms.testautomation.utilities.selenium.helpers.ClickClass;
+import com.hrms.testautomation.utilities.selenium.helpers.SelectClass;
+import com.hrms.testautomation.utilities.selenium.helpers.TextHandlingClass;
+import com.hrms.testautomation.utilities.selenium.wrappers.ClickActions;
+import com.hrms.testautomation.utilities.selenium.wrappers.SelectActions;
+import com.hrms.testautomation.utilities.selenium.wrappers.TextHandlingActions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,7 +15,9 @@ import java.util.Random;
 
 public class AssignLeavePage {
     WebDriver driver;
-
+    ClickActions clickActions=new ClickClass();
+    SelectActions selectActions=new SelectClass();
+    TextHandlingActions textHandlingActions=new TextHandlingClass();
     public AssignLeavePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver,this);
@@ -34,7 +39,7 @@ public class AssignLeavePage {
 
 
     public void clickOKButton() {
-        Click.clickOn(okButton);
+        clickActions.clickOn(okButton);
 
     }
 
@@ -44,15 +49,15 @@ public class AssignLeavePage {
 
     public void selectRandomLeaveType() {
         Random r=new Random();
-        Select.selectIndexFromDropdown(r.ints(0,5).hashCode(),leaveType);
+        selectActions.selectIndexFromDropdown(r.ints(0,5).hashCode(),leaveType);
     }
 
     public void enterDateRange(String jsonFromDate, String jsonToDate) {
-        TextHandling.enterText(jsonFromDate,fromDate);
-        TextHandling.enterText(jsonToDate,toDate);
+        textHandlingActions.enterText(jsonFromDate,fromDate);
+        textHandlingActions.enterText(jsonToDate,toDate);
     }
 
     public void clickAssignButton() {
-        Click.clickOn(assignButton);
+       clickActions.clickOn(assignButton);
     }
 }
