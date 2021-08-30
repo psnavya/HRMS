@@ -5,21 +5,21 @@ Background:
   And i log in with username "Admin" and password "admin123"
 
   @Run1
- Scenario: Add Leave Entitlement
+ Scenario Outline: Add Leave Entitlement
     #Values to be taken from json file
-   # Given i am user "<user>"
-    Given user is on Home Page
-    And i log in with username "Admin" and password "admin123"
+    Given i am user "<user>"
+    #Given user is on Home Page
+    #And i log in with username "Admin" and password "admin123"
     When i navigate to add leave entitlement tab
     And i enter employee name in leave entitlement page
     And i select leave type in leave entitlement page
     And i enter entitlement in leave entitlement page
     And i click Save button in leave entitlement page
     And i click OK button in Confirm Leave assignment popup
-  # Examples:
-   #|user|
-   #  |Jeniffer Lawrence|
-    # |Ross Geller      |
+  Examples:
+   |user|
+   |Jennifer Lawrence|
+    |Ross Geller|
 @Run
  Scenario Outline: Assign Leave Entitlement
     #Values to be taken from json file

@@ -1,8 +1,8 @@
 [
   {
-  "employeeName": "Jennifer Lawrence",
+   "employeeName": "Jennifer Lawrence",
     "leaveDetails": {
-      "leaveType": "US-FMLA",
+      "leaveType": "--US-FMLA",
       "entitlement": 1,
       "fromDate": "22-10-2021",
       "toDate": "22-10-2021"

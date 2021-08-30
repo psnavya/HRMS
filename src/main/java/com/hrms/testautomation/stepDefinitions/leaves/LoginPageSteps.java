@@ -16,7 +16,7 @@ public class LoginPageSteps {
     @Given("^i log in with username \"([^\"]*)\" and password \"([^\"]*)\"$")
     public void iLogInWithUsernameAndPassword(String arg0, String arg1) throws Throwable {
 
-        loginPage.enterPassword(arg0);
+        loginPage.enterUsername(arg0);
         loginPage.enterPassword(arg1);
         loginPage.clickLoginButton();
     }

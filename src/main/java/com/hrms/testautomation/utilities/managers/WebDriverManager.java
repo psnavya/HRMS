@@ -50,7 +50,8 @@ public class WebDriverManager {
                 break;
         }
 
-        if(FileReaderManager.getInstance().getConfigReader().getBrowserWindowSize()) driver.manage().window().maximize();
+        if(FileReaderManager.getInstance().getConfigReader().getBrowserWindowSize())
+            driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(FileReaderManager.getInstance().getConfigReader().getImplicitlyWait(), TimeUnit.SECONDS);
         return driver;
     }

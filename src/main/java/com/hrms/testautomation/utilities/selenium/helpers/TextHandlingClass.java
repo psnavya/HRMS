@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 public class TextHandlingClass implements TextHandlingActions {
     @Override
     public  void enterText(String value, WebElement we) {
+
+       we.clear();
        we.sendKeys(value);
     }
     @Override

@@ -53,6 +53,7 @@ public class AssignLeavePage {
     }
 
     public void enterDateRange(String jsonFromDate, String jsonToDate) {
+
         textHandlingActions.enterText(jsonFromDate,fromDate);
         textHandlingActions.enterText(jsonToDate,toDate);
     }

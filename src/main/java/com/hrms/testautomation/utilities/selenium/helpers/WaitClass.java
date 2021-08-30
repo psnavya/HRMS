@@ -4,8 +4,11 @@ import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 
 import com.hrms.testautomation.utilities.selenium.wrappers.WaitActions;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import com.hrms.testautomation.utilities.managers.FileReaderManager;
 
@@ -51,6 +54,16 @@ public class WaitClass implements WaitActions {
             System.out.println(e.getMessage());
         }
     }
+
+
+   /* @Override
+    public void waitForElementToAppear(WebElement webElement, WebDriver  driver) {
+        WebDriverWait wait=new WebDriverWait(driver, 20);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath( "/html/body/div[1]/section/div[2]/div/div[1]/div/div[1]/div/div/div/div[2]/div[2]/div/div/div/div/div[1]/div/div/a/i")));
+wait.until(ExpectedConditions.visibilityOfElementLocated(webElement.));
+
+    }
+*/
 
 
 }

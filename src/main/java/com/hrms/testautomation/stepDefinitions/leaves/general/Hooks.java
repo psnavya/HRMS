@@ -1,4 +1,4 @@
-package com.hrms.testautomation.stepDefinitions.leaves;
+package com.hrms.testautomation.stepDefinitions.leaves.general;
 
 import java.io.File;
 import java.io.IOException;
@@ -23,9 +23,14 @@ public class Hooks {
 
     @Before
     public void beforeScenario(Scenario scenario) {
-        Reporter.loadXMLConfig(new File(FileReaderManager.getInstance().getConfigReader().getReportConfigPath()));
-
-        Reporter.assignAuthor("HRMS Automation: Navya PS");
+      //  Reporter.loadXMLConfig(new File(FileReaderManager.getInstance().getConfigReader().getReportConfigPath()));
+try {
+    Reporter.assignAuthor("HRMS Automation: Navya PS");
+}
+catch(Exception e)
+{
+    e.printStackTrace();
+}
     }
 
     @After(order = 1)
@@ -45,6 +50,7 @@ public class Hooks {
 
                 //This attach the specified screenshot to the test
                 Reporter.addScreenCaptureFromPath(destinationPath.toString());
+
             } catch (IOException e) {
             }
         }
@@ -55,5 +61,10 @@ public class Hooks {
     public void AfterSteps() {
         testContext.getWebDriverManager().closeDriver();
     }
+
+    //Log.startTest Before scenario start logs
+    //Before steps driver initialization
+    //After steps driver close
+    // Log.endTestCase, After scenario reports endTest method and flushing report
 
 }

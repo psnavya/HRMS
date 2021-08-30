@@ -1,5 +1,6 @@
 package com.hrms.testautomation.stepDefinitions.leaves;
 
+import com.hrms.testautomation.entities.EmployeeDetails;
 import com.hrms.testautomation.leaves.AssignLeavePage;
 import com.hrms.testautomation.utilities.cucumber.TestContext;
 import cucumber.api.java.en.When;
@@ -7,10 +8,12 @@ import cucumber.api.java.en.When;
 public class AssignLeavePageSteps {
     TestContext context;
     AssignLeavePage assignLeavePage;
+    EmployeeDetails employeeDetails;
 
-    public AssignLeavePageSteps(TestContext context) {
+    public AssignLeavePageSteps(TestContext context,EmployeeDetails employeeDetails) {
         this.context = context;
         assignLeavePage=context.getPageObjectManager().getAssignLeavePage();
+        this.employeeDetails=employeeDetails;
     }
 
     @When("^i click OK button in Confirm Leave assignment popup$")

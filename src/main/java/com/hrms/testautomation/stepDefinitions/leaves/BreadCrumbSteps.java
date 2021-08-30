@@ -16,9 +16,7 @@ BreadCrumb breadCrumb;
 
     @When("^i navigate to add leave entitlement tab$")
     public void iNavigateToAddLeaveEntitlementTab()  {
-        JsonDataReader jsonDataReader=new JsonDataReader();
-        jsonDataReader.getCustomerByName("Jennifer Lawrence");
-        jsonDataReader.getCustomerData().get(0);
+
         breadCrumb.hoverOnViewLeaveModule();
         breadCrumb.hoverOneEntitlements();
         breadCrumb.clickOnAddEntitlements();
