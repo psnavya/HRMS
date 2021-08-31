@@ -1,0 +1,32 @@
+
+t	java:S116"ZRename this field "txtbx_FirstName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²Ù¸¸ÿÿÿÿÿ
+n	java:S116"YRename this field "txtbx_LastName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚÌÓ
+p	java:S116 "VRename this field "txtbx_Email" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·°—Ãşÿÿÿÿ
+p	java:S116#"VRename this field "txtbx_Phone" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øùÈÓıÿÿÿÿ
+{	java:S116&"fRename this field "drpdwn_CountryDropDownArrow" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úãª‚
+z	java:S116)"eRename this field "drpdwn_CountyDropDownArrow" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÆéï
+q	java:S116,"WRename this field "country_List" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ìºûÿÿÿÿ
+j	java:S116/"URename this field "txtbx_City" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òØï£
+l	java:S1162"XRename this field "txtbx_Address" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úŞñ>
+s	java:S1165"YRename this field "txtbx_PostCode" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õÏ÷ ÿÿÿÿÿ
+{	java:S1168"fRename this field "chkbx_ShipToDifferetAddress" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒ¯¶—
+w	java:S116;"]Rename this field "paymentMethod_List" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Áù€—ıÿÿÿÿ
+‚	java:S116>"hRename this field "chkbx_AcceptTermsAndCondition" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æ¼ÜÁùÿÿÿÿ
+s	java:S116A"YRename this field "btn_PlaceOrder" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºª©–ÿÿÿÿÿ
+c	java:S100D"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İº€×
+h	java:S100H"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹ì¯Íùÿÿÿÿ
+h	java:S100L"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡æ„Êûÿÿÿÿ
+h	java:S100P"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆÜ¨×ùÿÿÿÿ
+h	java:S100T"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷ÿúÿÿÿÿ
+b	java:S100X"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯™¸
+c	java:S100\"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰¥£Œ
+c	java:S100`"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹¥œ
+c	java:S100e"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(î”§«
+h	java:S100s"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²«–óıÿÿÿÿ
+V	java:S125y"<This block of commented-out lines of code should be removed.( ¸¤­ÿÿÿÿÿ
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œõÛÆ
+K
+java:S3984…"5Throw this exception or remove this useless statement(¦³ë
+i	java:S100‹"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌÇºøøÿÿÿÿ
+i	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(î™Í¦ùÿÿÿÿ
+i	java:S100š"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘ÄŞ»ıÿÿÿÿ

@@ -56,14 +56,14 @@ public class WaitClass implements WaitActions {
     }
 
 
-   /* @Override
+    @Override
     public void waitForElementToAppear(WebElement webElement, WebDriver  driver) {
         WebDriverWait wait=new WebDriverWait(driver, 20);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath( "/html/body/div[1]/section/div[2]/div/div[1]/div/div[1]/div/div/div/div[2]/div[2]/div/div/div/div/div[1]/div/div/a/i")));
-wait.until(ExpectedConditions.visibilityOfElementLocated(webElement.));
+       wait.until(ExpectedConditions.visibilityOf(webElement));
+
 
     }
-*/
+
 
 
 }

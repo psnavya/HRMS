@@ -1,0 +1,9 @@
+
+p
+java:S1104"UMake leaveType a static final constant or non-public and provide accessors if needed.(´çª»úÿÿÿÿ
+r
+java:S1104"WMake entitlement a static final constant or non-public and provide accessors if needed.(õÚÝžúÿÿÿÿ
+j
+java:S1104"TMake fromDate a static final constant or non-public and provide accessors if needed.(ÿÊ©ò
+h
+java:S1104"RMake toDate a static final constant or non-public and provide accessors if needed.(ˆÝÓÇ

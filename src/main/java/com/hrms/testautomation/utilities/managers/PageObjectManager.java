@@ -2,6 +2,7 @@ package com.hrms.testautomation.utilities.managers;
 
 
 
+import com.hrms.testautomation.entities.EmployeeDetails;
 import com.hrms.testautomation.leaves.*;
 import com.hrms.testautomation.utilities.dataProviders.JsonDataReader;
 import org.openqa.selenium.WebDriver;
@@ -27,7 +28,7 @@ public class PageObjectManager {
     private LeaveEntitlementPage leaveEntitlementPage;
     private  LeaveListPage leaveListPage;
     private  AssignLeavePage assignLeavePage;
-    private JsonDataReader jsonDataReader;
+    private  JsonDataReader jsonDataReader;
 
 
     public PageObjectManager(WebDriver driver) {
@@ -94,7 +95,7 @@ public class PageObjectManager {
         return (assignLeavePage==null)?assignLeavePage=new AssignLeavePage(driver):assignLeavePage;
     }
 
-    public JsonDataReader getJsonReader() {
+   public JsonDataReader getJsonReader() {
         return (jsonDataReader==null)?jsonDataReader=new JsonDataReader():jsonDataReader;
     }
 }

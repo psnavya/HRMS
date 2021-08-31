@@ -1,0 +1,9 @@
+
+Q	java:S125"<This block of commented-out lines of code should be removed.(µï¯¡
+^
+java:S5361'"HReplace this call to "replaceAll()" by a call to the "replace()" method.(¨¸Ä®
+>	java:S1086")Either remove or fill this block of code.(ï­£Ä
+h	java:S100="NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆÿíğşÿÿÿÿ
+v
+java:S1128"YRemove this unused import 'com.hrms.testautomation.utilities.managers.FileReaderManager'.(¨…¦8º•Í¿¹/
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ş—ÇÈ

@@ -1,0 +1,8 @@
+
+m	java:S116"SRename this field "btn_Cart" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·¹ÜÊýÿÿÿÿ
+v	java:S116"aRename this field "btn_ContinueToCheckout" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßµ°‚
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶ý™Ã
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûÜÄñøÿÿÿÿ
+y
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ð‹Ù¼ùÿÿÿÿ
+C	java:S108")Either remove or fill this block of code.(ð‹Ù¼ùÿÿÿÿ

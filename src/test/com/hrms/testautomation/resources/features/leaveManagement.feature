@@ -16,9 +16,9 @@ Background:
     And i enter entitlement in leave entitlement page
     And i click Save button in leave entitlement page
     And i click OK button in Confirm Leave assignment popup
-  Examples:
-   |user|
-   |Jennifer Lawrence|
+ Examples:
+  |user|
+  |Jennifer Lawrence|
     |Ross Geller|
 @Run
  Scenario Outline: Assign Leave Entitlement

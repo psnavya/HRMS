@@ -2,7 +2,7 @@ package com.hrms.testautomation.entities;
 
 public class LeaveDetails{
     public String leaveType;
-    public int entitlement;
+    public float entitlement;
     public String fromDate;
     public String toDate;
 
@@ -14,7 +14,7 @@ public class LeaveDetails{
         this.leaveType = leaveType;
     }
 
-    public int getEntitlement() {
+    public float getEntitlement() {
         return entitlement;
     }
 

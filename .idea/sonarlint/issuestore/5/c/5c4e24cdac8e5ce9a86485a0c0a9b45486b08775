@@ -1,0 +1,12 @@
+
+`	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(ªÔŞÿÿÿÿÿ
+`	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(‚ÑÔªÿÿÿÿÿ
+Z	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(âÇÆZ
+`	java:S112$"FDefine and throw a dedicated exception instead of using a generic one.(øÀó×üÿÿÿÿ
+[	java:S112)"FDefine and throw a dedicated exception instead of using a generic one.(Œ¤ı
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªÔŞÿÿÿÿÿ
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚ÑÔªÿÿÿÿÿ
+b	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âÇÆZ
+h	java:S100$"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øÀó×üÿÿÿÿ
+c	java:S100)"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ¤ı
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ŒÜĞ‡úÿÿÿÿ
